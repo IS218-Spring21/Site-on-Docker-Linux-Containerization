@@ -257,6 +257,13 @@
                     </tbody>
 
                 </table>
+                <h4>Logging into a Docker Container</h4>
+                <p><i>From <a href="https://www.ibm.com/support/knowledgecenter/SSWSR9_11.6.0/com.ibm.swg.im.mdmhs.release.docker.install.doc/topics/docker_accessingcontainer.html">https://www.ibm.com/support/knowledgecenter/SSWSR9_11.6.0/com.ibm.swg.im.mdmhs.release.docker.install.doc/topics/docker_accessingcontainer.html</a></i></p>
+                <ol type="1">
+                    <li>From terminal access the Docker working directory where you earlier deployed the Docker image package files.</li>
+                    <li>Run the Docker list command to get a list of all the Docker containers running in your system: <code>docker container ls</code></li>
+                    <li>Then run the following command <code>docker exec –it &#60;container name&#62; /bin/bash</code> </li>
+                </ol>
             </div>
         </div>
         <div class="row">
