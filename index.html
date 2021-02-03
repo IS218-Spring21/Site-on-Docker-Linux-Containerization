@@ -90,22 +90,60 @@
         </div>
         <div class="col-12">
             <p>
-                Before getting started with the Docker webserver, for this tutorial we will need the following resources:
+                Before getting started with the Docker webserver, for this tutorial we will need the following
+                resources:
             </p>
-            <ol>
+            <ul>
                 <li>
                     <b>Docker</b> - which can be downloaded <a href="https://www.docker.com/get-started">here</a>
                 </li>
                 <li>
                     <b>Git Bash</b> - which can be downloaded <a href="https://git-scm.com/downloads">here</a>
                 </li>
+            </ul>
+            <p>Now Lets Begin the Webserver with Docker!</p>
+            <ol>
+                <li>
+                    <p><b>Open Git Bash and type the following commands in pink</b></p>
+                    <p><code>cd Desktop</code> - to go to our Desktop directory</p>
+                    <p><code>mkdir webServer</code> - to make a directory/folder called "webServer"</p>
+                    <p><code>cd webServer</code> - to go inside of the folder "webServer" that we just created</p>
+                    <p>The following image should show the steps that we just did</p>
+                    <img src="img/Step1.PNG" alt="Step1 Image">
+                </li>
+                <br>
+                <li>
+                    <p><b>Create a basic HTML file that our web server will be using</b></p>
+                    <p><code>vi index.html</code> - to create a file named "index.html" using the vi editor. You can
+                        press the letter "i" to enter insert mode. You can copy and paste the following code into your
+                        editor using shift + insert</p>
+                    <pre>
+                        <code>
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html&gt;
+
+                            &lt;head&gt;
+                            &lt;title&gt;Web Server&lt;/title&gt;
+                            &lt;/head&gt;
+
+                            &lt;body&gt;
+                            &lt;h1&gt;Hello World&lt;/h1&gt;
+                            &lt;h2&gt;Hey there you made it!&lt;/h2&gt;
+                            &lt;/body&gt;
+
+                            &lt;/html&gt;
+                        </code>
+                    </pre>
+                    <p><code>:wq</code> - press the escape key and then this code. This will save your file.</p>
+                    <p>Once you exit the vi editor, your terminal should look like this</p>
+                    <img src="img/Step2.PNG" alt="Step2 Image">
+                </li>
+                <br>
+                <li>
+                    <p><b>Now lets make a Dockerfile</b></p>
+                </li>
+                <br>
             </ol>
-            <p>Ut tincidunt scelerisque suscipit. Nullam eget diam lacus. Sed feugiat magna et efficitur cursus. Aenean
-                at purus non nisi consequat ultrices eu in mi. Donec condimentum, erat id cursus mollis, lacus diam
-                laoreet odio, vel feugiat velit ipsum in urna. Aliquam euismod enim neque, vitae vulputate turpis
-                sodales a. Proin malesuada facilisis commodo. Vestibulum ante ipsum primis in faucibus orci luctus et
-                ultrices posuere cubilia curae; Quisque efficitur diam eu orci mollis, vitae varius quam malesuada.
-                Suspendisse potenti.</p>
         </div>
     </div>
     <div class="row">
