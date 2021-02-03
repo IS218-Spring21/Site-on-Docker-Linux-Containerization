@@ -141,8 +141,50 @@
                 <br>
                 <li>
                     <p><b>Now lets make a Dockerfile</b></p>
+                    <p><code>vi Dockerfile</code> - this will create a file called Dockerfile. Same as before you can
+                        copy and paste the following code into the Dockerfile.</p>
+                    <pre>
+                        <code>
+                            FROM nginx:alpine
+                            COPY . /usr/share/nginx/html
+                        </code>
+                    </pre>
+                    <p><code>:wq</code> - press the escape key and then this code. This will save your Dockerfile.</p>
+                    <p>Once you exit the vi editor, your terminal should look like this</p>
+                    <img src="img/Step3.PNG" alt="Step3 Image">
                 </li>
                 <br>
+                <li>
+                    <p><b>Open Docker Desktop</b></p>
+                    <p>Before running any Docker commands we need to make sure Docker is on and running on our
+                        computer</p>
+                    <p>This can be done by simply double clicking and opening this: </p>
+                    <img src="img/dockerIcon.PNG" alt="Docker Icon">
+                    <p>Sometimes nothing may appear or open but we can check if Docker is running by clicking the
+                        following in red and moving your cursor over the whale looking like image. A text should pop up
+                        saying Docker Desktop is running.</p>
+                    <img src="img/running.jpg" alt="Docker is Running">
+                    <p>If anything does open after opening Docker from the previous step you can leave it open or press
+                        the "X" to exit out of it. Docker will still be running </p>
+                </li>
+                <br>
+                <li>
+                    <p><b>Build a Docker image from the Dockerfile</b></p>
+                    <p><code>docker build -t html-server-image:v1 .</code> - this code will build the docker image.
+                        Every word in this code matters, even the lonely PERIOD at the end</p>
+                    <p>This command also creates an image called html-server-image with a tag labeled v1 meaning Version
+                        1</p>
+                    <p>Once this command is ran, you will see a bunch of words and your terminal should now look
+                        something like this</p>
+                    <img src="img/Step4.PNG" alt="Docker Image Build">
+                    <br>
+                    <p><code>docker images</code> - you can run this command to view the docker image that you just made. It should look like the following: </p>
+                    <img src="img/dockerImage.PNG" alt="Docker Image List">
+                </li>
+                <br>
+                <li>
+                    <p><b></b></p>
+                </li>
             </ol>
         </div>
     </div>
