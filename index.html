@@ -178,14 +178,40 @@
                         something like this</p>
                     <img src="img/Step4.PNG" alt="Docker Image Build">
                     <br>
-                    <p><code>docker images</code> - you can run this command to view the docker image that you just made. It should look like the following: </p>
+                    <p><code>docker images</code> - you can run this command to view the docker image that you just
+                        made. It should look like the following: </p>
                     <img src="img/dockerImage.PNG" alt="Docker Image List">
                 </li>
                 <br>
                 <li>
-                    <p><b></b></p>
+                    <p><b>Run the docker container</b></p>
+                    <p><code>docker run -d -p 80:80 html-server-image:v1</code> - this will run your html code in a web
+                        server that can be accessed on port 80.</p>
+                    <p>Your terminal should look something like this</p>
+                    <img src="img/Step5.PNG" alt="Step5 Image">
+                    <p>You should now be able to go onto any browser you like and type <code>localhost:80</code> into
+                        the search bar.</p>
+                    <p>This will take you to the html file that you created earlier being hosted on the web server from
+                        the Dockerfile that you created </p>
+                </li>
+                <br>
+                <li>
+                    <p><b>Stop your docker container</b></p>
+                    <p>Congrats you made a webserver using Docker!!!</p>
+                    <p>Now let's stop the docker container from running</p>
+                    <p>Before stopping the container we need to know the name of the container. We can figure out the
+                        name by running
+                    <p>
+                    <p><code>docker container ls</code></p>
+                    <img src="img/Step6.PNG" alt="Step6 Image">
+                    <p>In my case, the container was automatically named <code>nostalgic_dirac</code></p>
+                    <p><code>docker stop nostalgic_dirac</code> - this will stop the container called "nostalgic dirac".
+                        You should replace that with whatever you container was named</p>
+                    <img src="img/Step6.PNG" alt="Step6 Image">
+                    <p>Once you've stopped the container you should no longer be able to access the web server.</p>
                 </li>
             </ol>
+            <p>Congrats you are now done and know how to setup a web server and even close it using Docker!</p>
         </div>
     </div>
     <div class="row">
