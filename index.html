@@ -76,13 +76,18 @@
             </div>
             <div class="col-12">
                 <p>
-                    Virtualization and containerization are both techonologies used for reducing the need for more physical hardware. 
-                    They allow us to stardardize our software products to run on machines that may be different from the ones that 
-                    we developed our software on. Virtualization gives us virtual machines that allow us to emulate the environment that 
-                    we would have on another machine whereas containerization allows us to package the important parts of that environment along with our software.
+                    Virtualization and containerization are both techonologies used for reducing the need for more physical hardware. They
+                    allow us to stardardize our software products to run on machines that may be different from the ones that we developed
+                    our software on. Virtualization gives us virtual machines that allow us to emulate the environment that we would have on
+                    another machine whereas containerization allows us to package the important parts of that environment along with our
+                    software.
                 </p>
                 <p>
-                    
+                    One of the biggest differences is that containers run directly on our machine whereas a virtual machine runs on top of
+                    a hypervisor. Containers also contain "just enough" for our software to run instead of containing an entire machine with
+                    its own operating system which is much slower. This difference in speed is also due to the
+                    fact that containers grab their resources directly from the host operating system whereas a virtual machine must take
+                    resources from the host, allocate them to itself, and then use those resources.
                 </p>
             </div>
         </div>
