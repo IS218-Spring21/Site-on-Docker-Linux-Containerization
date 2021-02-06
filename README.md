@@ -12,6 +12,9 @@ Added Virtualization Section - Mohammed Uddin <br>
 Added Virtualization Summary - Mohammed Uddin <br>
 Added Containerization Section - Mohammed Uddin <br>
 Added Containerization Summary - Mohammed Uddin <br>
+### Feb 6, 2021
+Added Virtualization VS Containerization Section - Mohammed Uddin <br>
+Added Virtualization VS Containerization Second Paragraph - Mohammed Uddin <br>
 ## Sources
 Source Name [Source link](https://google.com)
 IBM Cloud Learn Hub [Virtualization](https://www.ibm.com/cloud/learn/virtualization-a-complete-guide)
