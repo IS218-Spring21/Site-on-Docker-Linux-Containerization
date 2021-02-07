@@ -38,16 +38,18 @@
                 <h3>Virtualization</h3>
             </div>
             <div class="col-12">
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget arcu vitae orci fringilla finibus.
-                    Suspendisse aliquam pellentesque odio vitae lacinia. Fusce urna eros, malesuada pellentesque mi quis,
-                    lacinia maximus metus. Nam magna enim, feugiat in diam vitae, dignissim gravida magna. Etiam at tempus
-                    odio. Maecenas lobortis ullamcorper elementum. Sed porta neque mauris, in semper ex tristique ut.</p>
-                <p>Ut tincidunt scelerisque suscipit. Nullam eget diam lacus. Sed feugiat magna et efficitur cursus. Aenean
-                    at purus non nisi consequat ultrices eu in mi. Donec condimentum, erat id cursus mollis, lacus diam
-                    laoreet odio, vel feugiat velit ipsum in urna. Aliquam euismod enim neque, vitae vulputate turpis
-                    sodales a. Proin malesuada facilisis commodo. Vestibulum ante ipsum primis in faucibus orci luctus et
-                    ultrices posuere cubilia curae; Quisque efficitur diam eu orci mollis, vitae varius quam malesuada.
-                    Suspendisse potenti.</p>
+                <p>
+                    Virtualization creates a layer of layer of virtual "hardware" over our physical hardware which essentialy allows us 
+                    to run a computer within a computer. These computers, or machines, within our computers are called virtual machines. 
+                    Virtual machines are very powerful tools as we can run a computer with a completely different operating system within 
+                    our host machine. The workhorse behind the curtains that allows all this to happen is called a hypervisor. The hypervisor 
+                    is a piece of software that runs on top of our host machine; it creates and manages our virtual machines. The hypervisor 
+                    allows us to allocate resources such as storage and memory to our virtual machines.
+                </p>
+                <p>
+                    In sum, virtualization is the abstraction of physical hardware. We can have pretend "hardware" or virtual hardware running 
+                    on top of another machine.
+                </p>
             </div>
         </div>
         <div class="row">
@@ -55,33 +57,38 @@
                 <h3>Containerization</h3>
             </div>
             <div class="col-12">
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget arcu vitae orci fringilla finibus.
-                    Suspendisse aliquam pellentesque odio vitae lacinia. Fusce urna eros, malesuada pellentesque mi quis,
-                    lacinia maximus metus. Nam magna enim, feugiat in diam vitae, dignissim gravida magna. Etiam at tempus
-                    odio. Maecenas lobortis ullamcorper elementum. Sed porta neque mauris, in semper ex tristique ut.</p>
-                <p>Ut tincidunt scelerisque suscipit. Nullam eget diam lacus. Sed feugiat magna et efficitur cursus. Aenean
-                    at purus non nisi consequat ultrices eu in mi. Donec condimentum, erat id cursus mollis, lacus diam
-                    laoreet odio, vel feugiat velit ipsum in urna. Aliquam euismod enim neque, vitae vulputate turpis
-                    sodales a. Proin malesuada facilisis commodo. Vestibulum ante ipsum primis in faucibus orci luctus et
-                    ultrices posuere cubilia curae; Quisque efficitur diam eu orci mollis, vitae varius quam malesuada.
-                    Suspendisse potenti.</p>
+                <p>
+                    A newer technology meant to tackle many of the same problems as virtualization is known as containerization. Containerization 
+                    does not involve creating a layer of abstraction for imaginary "hardware." Containeriztion allows us to not only ship a product 
+                    but also the environment the product relies on. As the name implies we place our software within containers, in other words we encapsulate 
+                    them. Within that container we place all of the dependencies that our software has. This way someone else on another machine can just 
+                    execute the entire container and get the same exact results as ourself.
+                </p>
+                <p>
+                    In sum, containerization allows us to package our programs along with our programs their dependencies so that they may run with same behavior 
+                    across all machines.
+                </p>
             </div>
         </div>
         <div class="row">
             <div class="col-12">
-                <h3>Comparison</h3>
+                <h3>Virtualization VS Containerization</h3>
             </div>
             <div class="col-12">
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget arcu vitae orci fringilla finibus.
-                    Suspendisse aliquam pellentesque odio vitae lacinia. Fusce urna eros, malesuada pellentesque mi quis,
-                    lacinia maximus metus. Nam magna enim, feugiat in diam vitae, dignissim gravida magna. Etiam at tempus
-                    odio. Maecenas lobortis ullamcorper elementum. Sed porta neque mauris, in semper ex tristique ut.</p>
-                <p>Ut tincidunt scelerisque suscipit. Nullam eget diam lacus. Sed feugiat magna et efficitur cursus. Aenean
-                    at purus non nisi consequat ultrices eu in mi. Donec condimentum, erat id cursus mollis, lacus diam
-                    laoreet odio, vel feugiat velit ipsum in urna. Aliquam euismod enim neque, vitae vulputate turpis
-                    sodales a. Proin malesuada facilisis commodo. Vestibulum ante ipsum primis in faucibus orci luctus et
-                    ultrices posuere cubilia curae; Quisque efficitur diam eu orci mollis, vitae varius quam malesuada.
-                    Suspendisse potenti.</p>
+                <p>
+                    Virtualization and containerization are both techonologies used for reducing the need for more physical hardware. They
+                    allow us to stardardize our software products to run on machines that may be different from the ones that we developed
+                    our software on. Virtualization gives us virtual machines that allow us to emulate the environment that we would have on
+                    another machine whereas containerization allows us to package the important parts of that environment along with our
+                    software.
+                </p>
+                <p>
+                    One of the biggest differences is that containers run directly on our machine whereas a virtual machine runs on top of
+                    a hypervisor. Containers also contain "just enough" for our software to run instead of containing an entire machine with
+                    its own operating system which is much slower. This difference in speed is also due to the
+                    fact that containers grab their resources directly from the host operating system whereas a virtual machine must take
+                    resources from the host, allocate them to itself, and then use those resources.
+                </p>
             </div>
         </div>
         <div class="row">
