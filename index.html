@@ -11,8 +11,8 @@
 
     <!-- Favicon *Need to add later* -->
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<body data-spy="scroll" data-target=".navbar" >
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">Docker Site</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03"
@@ -22,17 +22,42 @@
 
             <div class="collapse navbar-collapse" id="navbarColor03">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#virtualization">Virtualization</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#containerization">Containerization</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#comparison">Comparison</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#dockerWebServer">Web Server</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#linuxCommands">Linux Commands</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#dockerPycharm">Pycharm</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container mt-5 mb-5">
+    <div class="jumbotron jumbotron-fluid mt-5" id="home">
+        <div class="container">
+            <h1 class="display-3">Docker Linux Containerization</h1>
+            <p class="lead">Made by Ido Tanne, Johnny Pillacela, Mohammed Uddin</p>
+            <hr class="my-2">
+            <p>Read More below!</p>
+        </div>
+    </div>
+
+    <div class="container" id="virtualization">
         <div class="row">
             <div class="col-12">
                 <h3>Virtualization</h3>
@@ -52,7 +77,7 @@
                 </p>
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="containerization">
             <div class="col-12">
                 <h3>Containerization</h3>
             </div>
@@ -70,7 +95,7 @@
                 </p>
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="comparison">
             <div class="col-12">
                 <h3>Virtualization VS Containerization</h3>
             </div>
@@ -91,7 +116,7 @@
                 </p>
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="dockerWebServer">
             <div class="col-12">
                 <h3>Docker Web Server Tutorial</h3>
             </div>
@@ -221,7 +246,7 @@
                 <p>Congrats you are now done and know how to setup a web server and even close it using Docker!</p>
             </div>
         </div>
-            <div class="row">
+            <div class="row" id="linuxCommands">
                 <div class="col-12">
                     <h3>Basic Linux Commands & Logging in to a Docker Container</h3>
                 </div>
@@ -419,7 +444,7 @@
                     </ol>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" id="dockerPycharm">
                 <div class="col-12">
                     <h3>Docker in Pycharm Tutorial</h3>
                 </div>
